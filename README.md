@@ -11,7 +11,7 @@
 
 < Login Page >
 - 병렬 라우팅 (Parallel Routes, Intercepting Routes)    // https://nextjs.org/docs/app/building-your-application/routing/parallel-routes
-( Next 13에서 Parallel Routes가 새로 등장했는데 새로고침하거나 URL를 통해 직접 주소에 접근했을 경우 평소처럼 Login Page에 이동하게 되고 다른 페이지에서 Link를 통해 갈 경우 Intercepting Routes에 의해 Modal 페이지로 이동하게 된다. )
+Next 13에서 Parallel Routes가 새로 등장했는데 새로고침하거나 URL를 통해 직접 주소에 접근했을 경우 평소처럼 Login Page에 이동하게 되고 다른 페이지에서 Link를 통해 갈 경우 Intercepting Routes에 의해 Modal 페이지로 이동하게 된다.
 
 ***
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
