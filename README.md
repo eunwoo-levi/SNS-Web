@@ -1,3 +1,18 @@
+< SNS Website > - Next.JS
+
+< 라이브러리 >
+- react-icons
+
+< CSS >
+- tailwind
+
+< 상태관리 라이브러리 >
+- zustand
+
+< Login Page >
+- 병렬 라우팅 (Parallel Routes, Intercepting Routes)    // https://nextjs.org/docs/app/building-your-application/routing/parallel-routes
+
+***
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
