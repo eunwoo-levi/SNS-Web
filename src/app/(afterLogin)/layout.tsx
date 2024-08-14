@@ -13,17 +13,24 @@ export default function AfterLoginLayout({
     <div className="flex items-stretch min-h-screen">
       <header className="flex flex-col items-end flex-grow">
         <section className="w-[275px] h-[100dvh]">
-          <div className="bg-orange-400 fixed w-[275px] h-[100dvh]">
+          <div className="fixed bg-orange-400 w-[275px] h-[100dvh] flex flex-col">
             <Link href={"/home"} className="inline-block mt-[2px]">
               <div className="w-[60px] h-[60px] pl-2 rounded-full flex justify-center items-center hover:bg-[rgba(15,20,25,0.1)]">
-                <Image width={50} height={50} src={"/sLogo.png"} alt="logo2" />
+                <Image width={50} height={50} src={"/sLogo.png"} alt="logo" />
               </div>
             </Link>
-            <nav>
+            <nav className="flex-1">
               <ul>
                 <NavMenu />
               </ul>
+              <Link
+                href={"/compose/tweet"}
+                className="bg-blue-400 rounded-3xl text-white font-semibold w-[200px] p-2.5 flex justify-center items-center mx-auto hover:bg-[rgba(26,140,216)] transition"
+              >
+                Post
+              </Link>
             </nav>
+            <div>LogOut</div>
           </div>
         </section>
       </header>
