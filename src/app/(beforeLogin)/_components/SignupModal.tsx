@@ -60,7 +60,9 @@ export default function SignupModal() {
           <IoClose size={30} />
         </button>
         <div className="px-[50px] pb-[20px] w-full flex flex-col gap-4 h-full">
-          <h1 className="text-3xl font-bold pb-4">계정을 생성하세요.</h1>
+          <h1 className="text-3xl font-bold pb-4 text-black">
+            계정을 생성하세요.
+          </h1>
           <form className="flex flex-col">
             <input
               type="text"

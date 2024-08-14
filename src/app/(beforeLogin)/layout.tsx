@@ -5,7 +5,7 @@ interface LayoutProps {
   modal: ReactNode;
 }
 
-export default function Layout({ children, modal }: LayoutProps) {
+export default function BeforeLoginLayout({ children, modal }: LayoutProps) {
   return (
     <div>
       {children}
