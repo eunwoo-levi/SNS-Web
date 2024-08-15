@@ -13,7 +13,7 @@ export default function Tab() {
   };
 
   return (
-    <div className="fixed w-[598px] bg-[rgba(255,255,255,0.85)] dark:bg-transparent backdrop-blur-sm border-b-[1px] border-solid">
+    <div className="fixed z-10 w-[598px] bg-[rgba(255,255,255,0.85)] dark:bg-transparent backdrop-blur-sm border-b-[1px] border-[rgb(47,51,54)]">
       <div className="text-[20px] leading-[24px] font-bold py-[12px] px-[16px]">
         Home
       </div>
