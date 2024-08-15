@@ -11,7 +11,7 @@ URL : https://sns-eunwoo.vercel.app/
 < 라이브러리 >
 - react-icons 
 - dayjs  // Post를 올린 시간 계산
-- cx   // tailwind 여러 className + 조건부로 사용
+- classNames (cx)   // tailwind 여러 className + 조건부로 사용
 - shadcn   // darkmode
 
 < CSS >
