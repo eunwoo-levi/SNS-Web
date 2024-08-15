@@ -67,28 +67,28 @@ export default function SignupModal() {
             <input
               type="text"
               placeholder="닉네임"
-              className="border w-full my-2 p-2 rounded-lg"
+              className="border w-full my-2 p-2 rounded-lg bg-white text-black"
               value={nickname}
               onChange={onChangeNickname}
             />
             <input
               type="text"
               placeholder="아이디"
-              className="border w-full my-2 p-2 rounded-lg"
+              className="border w-full my-2 p-2 rounded-lg bg-white text-black"
               value={id}
               onChange={onChangeId}
             />
             <input
               type="password"
               placeholder="비밀번호"
-              className="border w-full my-2 p-2 rounded-lg"
+              className="border w-full my-2 p-2 rounded-lg bg-white text-black"
               value={password}
               onChange={onChangePassword}
             />
             <input
               type="file"
               placeholder="프로필"
-              className="border w-full my-2 p-2 rounded-lg"
+              className="border w-full my-2 p-2 rounded-lg text-black"
               accept="image/*"
               onChange={onChangeImageFile}
               multiple

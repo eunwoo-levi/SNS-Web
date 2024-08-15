@@ -33,20 +33,20 @@ export default function LoginModal() {
             <input
               type="text"
               placeholder="아이디"
-              className="border w-full my-2 p-2 rounded-lg"
+              className="border w-full my-2 p-2 rounded-lg bg-white text-black"
               value={id}
               onChange={onChangeId}
             />
             <input
               type="password"
               placeholder="비밀번호"
-              className="border w-full my-2 p-2 rounded-lg"
+              className="border w-full my-2 p-2 rounded-lg bg-white text-black"
               value={password}
               onChange={onChangePassword}
             />
           </form>
           <div className="flex justify-center mt-auto">
-            <button className="bg-neutral-500 rounded-3xl text-white w-[30vw] p-2">
+            <button className="bg-neutral-500 rounded-3xl text-white w-[30vw] p-2 hover:bg-neutral-600">
               로그인하기
             </button>
           </div>

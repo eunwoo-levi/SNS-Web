@@ -1,3 +1,4 @@
+import { DarkModeButton } from "@/components/DarkModeButton";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,7 +14,12 @@ export default function Main() {
           className="roudned-lg"
         />
       </div>
+
       <div className="flex-1 flex flex-col items-start gap-2">
+        <div className="w-full flex justify-end pr-[60px] mb-[20px]">
+          <DarkModeButton />
+        </div>
+
         <h1 className="text-5xl font-bold mb-8">
           전세계 사람들과 소통해보세요!
         </h1>
