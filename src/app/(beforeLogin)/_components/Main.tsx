@@ -5,7 +5,13 @@ export default function Main() {
   return (
     <div className="  flex flex-row w-full min-h-screen items-center">
       <div className="flex-1 flex justify-center items-center">
-        <Image width={500} height={500} src="/sLogo.png" alt="logo" />
+        <Image
+          width={350}
+          height={350}
+          src="/sLogo2.png"
+          alt="logo"
+          className="roudned-lg"
+        />
       </div>
       <div className="flex-1 flex flex-col items-start gap-2">
         <h1 className="text-5xl font-bold mb-8">
