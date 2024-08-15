@@ -1,8 +1,18 @@
 < SNS Website > - Next.JS <br/>
 URL : https://sns-eunwoo.vercel.app/
 
+< 구현 기능 >
+- DarkMode (light/dark/system)
+- 로그인
+- // 글 올리기
+- // SNS 채팅
+
+
 < 라이브러리 >
-- react-icons
+- react-icons 
+- dayjs  // Post를 올린 시간 계산
+- cx   // tailwind 여러 className + 조건부로 사용
+- shadcn   // darkmode
 
 < CSS >
 - tailwind
