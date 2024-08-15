@@ -2,6 +2,7 @@ import dayjs from "dayjs";
 import Image from "next/image";
 import Link from "next/link";
 import relativeTime from "dayjs/plugin/relativeTime";
+import ActionButton from "./ActionButton";
 
 dayjs.locale("en");
 dayjs.extend(relativeTime);
@@ -19,7 +20,7 @@ export default function Post() {
   };
 
   return (
-    <article className="flex flex-col py-[12px] px-[16px] border-b-[1px] border-[rgb(47,51,54)] cursor-pointer hover:bg-[rgba(0,0,0,0.03)] dark:hover:bg-[rgba(0,0,0,0.2)] transition duration-200">
+    <article className="flex flex-col pt-[12px] pb-[8px] px-[16px] border-b-[1px] border-[rgb(47,51,54)] cursor-pointer hover:bg-[rgba(0,0,0,0.03)] dark:hover:bg-[rgba(0,0,0,0.2)] transition duration-200">
       <div className="flex flex-row">
         <Link href={`/${target.User.id}`} className="w-[40px] mr-[12px]">
           <Image
@@ -47,6 +48,7 @@ export default function Post() {
             src={target.Image}
             alt="content Image"
           />
+          <ActionButton />
         </div>
       </div>
     </article>
