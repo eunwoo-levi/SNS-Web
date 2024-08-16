@@ -22,7 +22,7 @@ URL : https://sns-eunwoo.vercel.app/
 
 < **알게된 지식** >
 
-- 병렬 라우팅 (Parallel Routes, Intercepting Routes)    // https://nextjs.org/docs/app/building-your-application/routing/parallel-routes
+- 1. 병렬 라우팅 (Parallel Routes, Intercepting Routes)    // https://nextjs.org/docs/app/building-your-application/routing/parallel-routes
 <br/> -> Login/Singout 페이지 , Post 페이지
 <br/>
 Next 13에서 Parallel Routes가 새로 등장했는데 새로고침하거나 URL를 통해 직접 주소에 접근했을 경우 평소처럼 Login Page에 이동하게 되고 다른 페이지에서 Link를 통해 갈 경우 Intercepting Routes에 의해 Modal 페이지로 이동하게 된다.   Intercepting Routes : "(.)/ ~~"
@@ -43,6 +43,28 @@ usePathname 훅은 현재 브라우저에서 사용 중인 경로(pathname)를 �
 
 **useSelectedLayoutSegment() VS usePathname()** <br/>
 현재 경로가 /dashboard/settings/profile이라면, 전자는 "/dashboard" , 후자는 "/dashboard/settings/profile" 를 반환한다. 즉, useSelectedLayoutSegment()는 각 레이아웃 단계에서 활성화된 세그먼트만 반환한다.
+
+<br/><br/>
+
+- 2. useRouter ( + searchParams ) VS use redirect <br/>
+
+useRouter 는 클라이언트 컴포넌트에서   useParams, usePathname 등은  URL 정보 읽기  <br/>
+push는 뒤로가기(back()) 가능, replace 불가능 - 보통 뒤로가기 하기 싫은 페이지 (로그인) <br/> <br/>
+
+(permanentRedriect 혹은 )redirect는 서버에서 사이드 작업에서    (next.js참고) <br/><br/>
+
+
+- **searchParams**
+```javascript
+interface Props{
+    searchParams: { q: string };
+}
+export default function Search ( { searchParams } : Props){
+    searchParams.~~~~   <- 이렇게 사용가능 (쿼리) 
+return()
+}
+
+```
 
 
 
