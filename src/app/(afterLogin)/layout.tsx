@@ -8,13 +8,14 @@ import TrendSection from "./_components/TrendSection";
 import FollowRecommend from "./_components/FollowReccomend";
 import { DarkModeButton } from "@/components/DarkModeButton";
 
-export default function AfterLoginLayout({
-  children,
-}: {
+interface Props {
   children: ReactNode;
-}) {
+  modal: ReactNode;
+}
+
+export default function AfterLoginLayout({ children, modal }: Props) {
   return (
-    <div className="flex items-stretch h-[200vh]">
+    <div className="flex items-stretch min-h-screen">
       <header className="flex flex-col items-end flex-grow">
         <section className="w-[275px] h-[100dvh]">
           <div className="fixed w-[275px] h-[100dvh] flex flex-col">
@@ -37,7 +38,7 @@ export default function AfterLoginLayout({
                 <NavMenu />
               </ul>
               <Link
-                href={"/compose/tweet"}
+                href={"/compose/post"}
                 className="bg-blue-400 rounded-3xl text-white font-semibold w-[200px] p-2.5 flex justify-center items-center mx-auto hover:bg-[rgba(26,140,216)] transition"
               >
                 Post
@@ -71,6 +72,7 @@ export default function AfterLoginLayout({
           </section>
         </div>
       </div>
+      {modal}
     </div>
   );
 }

@@ -11,7 +11,7 @@ export default function Main() {
           height={350}
           src="/sLogo2.png"
           alt="logo"
-          className="roudned-lg"
+          className="rounded-3xl"
         />
       </div>
 
