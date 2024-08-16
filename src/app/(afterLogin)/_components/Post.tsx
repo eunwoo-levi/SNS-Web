@@ -3,12 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 import relativeTime from "dayjs/plugin/relativeTime";
 import ActionButton from "./ActionButton";
+import PostArticle from "./PostArticle";
 
 dayjs.locale("en");
 dayjs.extend(relativeTime);
 
 export default function Post() {
   const target = {
+    postId: 1,
     User: {
       id: "eunwoo1234",
       nickname: "Eunwoo",
@@ -20,7 +22,7 @@ export default function Post() {
   };
 
   return (
-    <article className="flex flex-col pt-[12px] pb-[8px] px-[16px] border-b-[1px] border-[rgb(47,51,54)] cursor-pointer hover:bg-[rgba(0,0,0,0.03)] dark:hover:bg-[rgba(0,0,0,0.2)] transition duration-200">
+    <PostArticle post={target}>
       <div className="flex flex-row">
         <Link href={`/${target.User.id}`} className="w-[40px] mr-[12px]">
           <Image
@@ -51,6 +53,6 @@ export default function Post() {
           <ActionButton />
         </div>
       </div>
-    </article>
+    </PostArticle>
   );
 }

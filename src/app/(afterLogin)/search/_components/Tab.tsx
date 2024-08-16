@@ -23,7 +23,7 @@ export default function Tab() {
       <div className="w-[598px] h-[53px] flex">
         <div
           onClick={onClickTop}
-          className="relative flex-1 flex text-[15px] justify-center items-center cursor-pointer"
+          className="relative flex-1 flex text-[15px] justify-center items-center hover:bg-neutral-400 hover:bg-opacity-30 cursor-pointer"
         >
           Top
           {current === "top" && (
@@ -32,7 +32,7 @@ export default function Tab() {
         </div>
         <div
           onClick={onClickLatest}
-          className="relative flex-1 flex text-[15px] justify-center items-center cursor-pointer"
+          className="relative flex-1 flex text-[15px] justify-center items-center hover:bg-neutral-400 hover:bg-opacity-30 cursor-pointer"
         >
           Latest
           {current === "latest" && (

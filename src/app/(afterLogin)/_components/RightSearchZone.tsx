@@ -1,7 +1,6 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { IoSearch } from "react-icons/io5";
 import SearchForm from "./SearchForm";
 
 export default function RightSearchZone() {

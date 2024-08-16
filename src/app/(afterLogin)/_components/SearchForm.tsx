@@ -2,7 +2,7 @@ import { IoSearch } from "react-icons/io5";
 
 // searchParams : {q:string}
 interface Props {
-  searchParams: {
+  searchParams?: {
     p?: string;
     f?: string;
     pf?: string;

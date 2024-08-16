@@ -1,3 +1,3 @@
-export default function StatusPage(){
-    return(<div>StatusPage</div>)
+export default function SinglePostPage() {
+  return <div>StatusPage</div>;
 }
