@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
-import { IoSearch } from "react-icons/io5";
 import NavMenu from "./_components/NavMenu";
 import LogOutButton from "./_components/LogOutButton";
 import TrendSection from "./_components/TrendSection";
 import FollowRecommend from "./_components/FollowReccomend";
 import { DarkModeButton } from "@/components/DarkModeButton";
+import RightSearchZone from "./_components/RightSearchZone";
 
 interface Props {
   children: ReactNode;
@@ -39,7 +39,7 @@ export default function AfterLoginLayout({ children, modal }: Props) {
               </ul>
               <Link
                 href={"/compose/post"}
-                className="bg-blue-400 rounded-3xl text-white font-semibold w-[200px] p-2.5 flex justify-center items-center mx-auto hover:bg-[rgba(26,140,216)] transition"
+                className="bg-blue-400 rounded-3xl text-white font-semibold w-[220px] h-[46px] mt-[10px] p-2.5 flex justify-center items-center mx-auto hover:bg-[rgba(26,140,216)] transition"
               >
                 Post
               </Link>
@@ -52,18 +52,9 @@ export default function AfterLoginLayout({ children, modal }: Props) {
         <div className="w-[990px] h-[100%] flex justify-between">
           <main className="w-[600px]">{children}</main>
           <section className="w-[350px]">
-            <div className="mb-[60px] w-[350px]">
-              <form className="fixed bg-gray-200 flex items-center w-[350px] h-[42px] mt-[6px] mb-[12px] rounded-3xl">
-                <IoSearch size={20} className="ml-4" color="black" />
-                <input
-                  type="search"
-                  placeholder="Search"
-                  className="ml-2 pl-3 bg-transparent"
-                />
-              </form>
-            </div>
+            <RightSearchZone />
             <TrendSection />
-            <div className="border border-neutral-300 mt-[12px] px-[16px] py-[12px] text-[20px] font-bold rounded-lg">
+            <div className="border border-neutral-300 mt-[12px] px-[16px] py-[12px] text-[20px] font-bold rounded-xl">
               <h3 className="pb-[12px] ">Who to follow</h3>
               <FollowRecommend />
               <FollowRecommend />
