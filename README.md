@@ -1,4 +1,4 @@
-< SNS Website > - Next.JS <br/>
+< SNS Website > - Next.JS <br/><br/>
 URL : https://sns-eunwoo.vercel.app/
 
 < 구현 기능 >
@@ -63,9 +63,17 @@ export default function Search ( { searchParams } : Props){
     searchParams.~~~~   <- 이렇게 사용가능 (쿼리) 
 return()
 }
-
 ```
 
+<br/><br/>
+
+< **useSearchParams**  -  훅   (client 컴포넌트에서 사용가능) >
+```javascript
+cons searchParams  =  useSearchParams();
+useSearchParams.get('q')                                     // get을 써서 괄호안에 원하는 쿼리 넣음
+```
+
+searchParams.toString() 하면 모든 쿼리 다 반환해
 
 
 <br/><br/><br/>
