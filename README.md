@@ -20,7 +20,8 @@ URL : https://sns-eunwoo.vercel.app/
 < 상태관리 라이브러리 >
 - zustand
 
-< Login Page >
+< **알게된 지식** >
+
 - 병렬 라우팅 (Parallel Routes, Intercepting Routes)    // https://nextjs.org/docs/app/building-your-application/routing/parallel-routes
 <br/> -> Login/Singout 페이지 , Post 페이지
 <br/>
@@ -29,6 +30,16 @@ Next 13에서 Parallel Routes가 새로 등장했는데 새로고침하거나 UR
 <br/><br/>
 
 ![image](https://github.com/user-attachments/assets/ef2892a7-80fb-4eb6-aeb0-c946cca9ec09)
+
+<br/><br/>
+- 훅: useSelectedLayoutSegment() <br/>
+Next.js 13의 App Router는 URL 경로를 기반으로 레이아웃을 구성한다. <br/>
+useSelectedLayoutSegment 훅은 현재 활성화된 세그먼트를 반환한. 예를 들어, 사용자가 특정 페이지를 탐색할 때 현재 경로에 해당하는 세그먼트가 무엇인지 확인하여, 해당 세그먼트에 맞춰 UI를 변경할 수 있다.<br/>
+정리: useSelectedLayoutSegment: 현재 활성화된 레이아웃 세그먼트를 가져온다. ex) 사용자가 /dashboard 경로에 있다면 selectedSegment 값은 "dashboard"가 된다.
+
+- 훅:  usePathname() <br/>
+usePathname은 Next.js 13의 App Router에서 제공하는 훅(Hook)으로, 현재 페이지의 경로(pathname)를 가져올 때 사용된다. usePathname은 클라이언트 측에서 현재 URL의 경로를 쉽게 접근하고, 이 경로에 따라 동적으로 컴포넌트를 렌더링하거나, 다른 로직을 수행할 수 있게 해준다. <br/>
+usePathname 훅은 현재 브라우저에서 사용 중인 경로(pathname)를 문자열 형태로 반환한다. 예를 들어, 사용자가 /dashboard/settings 페이지에 있다면, usePathname은 "/dashboard/settings"을 반환한다.
 
 
 ***
