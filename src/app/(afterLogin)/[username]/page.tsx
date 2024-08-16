@@ -3,6 +3,7 @@ import { BsFillShieldLockFill } from "react-icons/bs";
 import { IoArrowBack } from "react-icons/io5";
 import { MdVerified } from "react-icons/md";
 import Post from "../_components/Post";
+import BackButton from "../_components/BackButton";
 
 const User = {
   id: "eunwoo1234",
@@ -14,7 +15,7 @@ export default function Home() {
   return (
     <main className="flex flex-col items-stretch w-[600px] border-x-[1px] border-neutral-300">
       <div className="flex flex-row h-[53px] items-center ml-[10px]">
-        <IoArrowBack size={25} />
+        <BackButton />
         <div className="w-[510px] pl-[20px] flex items-center">
           <h1 className="text-[22px] font-bold mr-2">{User.nickname}</h1>
           <BsFillShieldLockFill size={16} />

@@ -1,6 +1,15 @@
 import { IoSearch } from "react-icons/io5";
 
-export default function SearchForm() {
+// searchParams : {q:string}
+interface Props {
+  searchParams: {
+    p?: string;
+    f?: string;
+    pf?: string;
+  };
+}
+
+export default function SearchForm({ searchParams }: Props) {
   return (
     <form className="fixed bg-[rgba(239,243,244)] dark:bg-slate-800 flex items-center w-inherit h-[42px] mt-[6px] mb-[12px] rounded-3xl text-white">
       <IoSearch size={20} className="ml-4" color="gray" />
