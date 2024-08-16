@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import BackButton from "../_components/BackButton";
 import Post from "../_components/Post";
 import SearchForm from "../_components/SearchForm";
@@ -15,7 +16,9 @@ export default function SearchPage() {
             <SearchForm />
           </div>
         </div>
-        <Tab />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Tab />
+        </Suspense>
       </div>
       <div>
         <Post />
