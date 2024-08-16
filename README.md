@@ -25,6 +25,9 @@ URL : https://sns-eunwoo.vercel.app/
 <br/> -> Login/Singout 페이지 , Post 페이지
 <br/>
 Next 13에서 Parallel Routes가 새로 등장했는데 새로고침하거나 URL를 통해 직접 주소에 접근했을 경우 평소처럼 Login Page에 이동하게 되고 다른 페이지에서 Link를 통해 갈 경우 Intercepting Routes에 의해 Modal 페이지로 이동하게 된다.   Intercepting Routes : "(.)/ ~~"
+<br/> 라우트 가로채기(Intercepting Routes)는 현재 레이아웃 안에서 라우트를 로드하면서 현재 페이지의 컨텍스트를 유지할 수 있게 해준다.
+![image](https://github.com/user-attachments/assets/ef2892a7-80fb-4eb6-aeb0-c946cca9ec09)
+
 
 ***
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
