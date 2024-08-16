@@ -46,7 +46,7 @@ usePathname 훅은 현재 브라우저에서 사용 중인 경로(pathname)를 �
 
 <br/><br/>
 
-- 2. useRouter ( + searchParams ) VS use redirect <br/>
+- 2. **useRouter ( + searchParams ) VS use redirect** <br/>
 
 useRouter 는 클라이언트 컴포넌트에서   useParams, usePathname 등은  URL 정보 읽기  <br/>
 push는 뒤로가기(back()) 가능, replace 불가능 - 보통 뒤로가기 하기 싫은 페이지 (로그인) <br/> <br/>
@@ -54,7 +54,7 @@ push는 뒤로가기(back()) 가능, replace 불가능 - 보통 뒤로가기 하
 (permanentRedriect 혹은 )redirect는 서버에서 사이드 작업에서    (next.js참고) <br/><br/>
 
 
-- **searchParams**
+- **searchParams**  - (search 구현)
 ```javascript
 interface Props{
     searchParams: { q: string };
