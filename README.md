@@ -41,6 +41,12 @@ useSelectedLayoutSegment 훅은 현재 활성화된 세그먼트를 반환한. �
 usePathname은 Next.js 13의 App Router에서 제공하는 훅(Hook)으로, 현재 페이지의 경로(pathname)를 가져올 때 사용된다. usePathname은 클라이언트 측에서 현재 URL의 경로를 쉽게 접근하고, 이 경로에 따라 동적으로 컴포넌트를 렌더링하거나, 다른 로직을 수행할 수 있게 해준다. <br/>
 usePathname 훅은 현재 브라우저에서 사용 중인 경로(pathname)를 문자열 형태로 반환한다. 예를 들어, 사용자가 /dashboard/settings 페이지에 있다면, usePathname은 "/dashboard/settings"을 반환한다.
 
+**useSelectedLayoutSegment() VS usePathname()** <br/>
+현재 경로가 /dashboard/settings/profile이라면, 전자는 "/dashboard" , 후자는 "/dashboard/settings/profile" 를 반환한다. 즉, useSelectedLayoutSegment()는 각 레이아웃 단계에서 활성화된 세그먼트만 반환한다.
+
+
+
+<br/><br/><br/>
 
 ***
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
