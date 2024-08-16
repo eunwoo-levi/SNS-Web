@@ -1,5 +1,5 @@
 < SNS Website > - Next.JS <br/><br/>
-URL : https://sns-eunwoo.vercel.app/
+배포 : https://sns-eunwoo.vercel.app/
 
 < 구현 기능 >
 - DarkMode (light/dark/system)
