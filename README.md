@@ -65,7 +65,7 @@ return()
 }
 ```
 
-{paramsm searcgOarans} 중에서 params는 slug부분을 추출한다.
+또한, {paramsm , searchParams} 중에서 params는 slug부분을 추출한다.
 
 <br/><br/>
 
