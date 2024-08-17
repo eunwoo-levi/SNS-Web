@@ -65,6 +65,8 @@ return()
 }
 ```
 
+{paramsm searcgOarans} 중에서 params는 slug부분을 추출한다.
+
 <br/><br/>
 
 < **useSearchParams**  -  훅   (client 컴포넌트에서 사용가능) >
