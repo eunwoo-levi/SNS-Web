@@ -3,6 +3,11 @@
 import { useRouter } from "next/navigation";
 import { ReactNode } from "react";
 
+interface ImageType {
+  imageId: number;
+  link: string;
+}
+
 interface Props {
   children: ReactNode;
   post: {
@@ -14,7 +19,7 @@ interface Props {
       image: string;
     };
     createAt: Date;
-    Image: string;
+    Images: ImageType[];
   };
 }
 

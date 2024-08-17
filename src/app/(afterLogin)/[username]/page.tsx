@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { BsFillShieldLockFill } from "react-icons/bs";
-import { IoArrowBack } from "react-icons/io5";
 import { MdVerified } from "react-icons/md";
 import Post from "../_components/Post";
 import BackButton from "../_components/BackButton";

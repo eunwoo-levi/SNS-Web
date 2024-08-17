@@ -4,11 +4,16 @@ import Link from "next/link";
 import relativeTime from "dayjs/plugin/relativeTime";
 import ActionButton from "./ActionButton";
 import PostArticle from "./PostArticle";
+import { faker } from "@faker-js/faker";
 
 dayjs.locale("en");
 dayjs.extend(relativeTime);
 
-export default function Post() {
+interface Props {
+  noImage?: boolean;
+}
+
+export default function Post({ noImage }: Props) {
   const target = {
     postId: 1,
     User: {
@@ -18,8 +23,12 @@ export default function Post() {
     },
     content: "나만의 SNS 페이지 만들어 보는중..!",
     createAt: new Date(),
-    Image: "/contentImg.png",
+    Images: [] as any,
   };
+
+  if (Math.random() > 0.5) {
+    target.Images.push({ imageId: 1, link: faker.image.urlLoremFlickr() });
+  }
 
   return (
     <PostArticle post={target}>
@@ -44,12 +53,20 @@ export default function Post() {
             </span>
           </div>
           <div>{target.content}</div>
-          <Image
-            width={600}
-            height={400}
-            src={target.Image}
-            alt="content Image"
-          />
+          <div className="pr-4">
+            {!noImage && target.Images && target.Images.length > 0 && (
+              <Link
+                href={`/${target.User.id}/status/${target.postId}/photo/${target.Images[0].imageId}`}
+              >
+                <Image
+                  width={560}
+                  height={350}
+                  src={target.Images[0]?.link}
+                  alt="post image"
+                />
+              </Link>
+            )}
+          </div>
           <ActionButton />
         </div>
       </div>
