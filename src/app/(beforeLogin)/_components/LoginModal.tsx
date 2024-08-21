@@ -23,9 +23,9 @@ export default function LoginModal() {
 
   return (
     <div className="fixed bg-[rgba(0,0,0,0.4)] top-0 left-0 right-0 bottom-0 w-full min-h-screen flex justify-center items-start">
-      <div className="bg-white relative top-[10%] max-w-[80vw] min-w-[600px] h-[450px] flex flex-col rounded-xl">
+      <div className="bg-white relative top-[10%] max-w-[600px] w-full h-[450px] flex flex-col rounded-xl">
         <button onClick={onClickClose} className="flex justify-end p-4">
-          <IoClose size={30} />
+          <IoClose size={30} color="black" />
         </button>
         <div className="px-[50px] pb-[20px] w-full flex flex-col gap-4 h-full">
           <h1 className="text-3xl font-bold pb-4 text-black">로그인하세요</h1>
