@@ -33,7 +33,7 @@ export default function PostArticle({ children, post }: Props) {
   return (
     <article
       onClickCapture={onClick}
-      className="flex flex-col pt-[12px] pb-[8px] px-[16px] border-b-[1px] border-[rgb(47,51,54)] cursor-pointer hover:bg-[rgba(0,0,0,0.03)] dark:hover:bg-[rgba(0,0,0,0.2)] transition duration-200"
+      className=" flex flex-col pt-[12px] pb-[8px] px-[16px] border-b-[1px] border-[rgb(47,51,54)] cursor-pointer hover:bg-[rgba(0,0,0,0.03)] dark:hover:bg-[rgba(0,0,0,0.2)] transition duration-200"
     >
       {children}
     </article>

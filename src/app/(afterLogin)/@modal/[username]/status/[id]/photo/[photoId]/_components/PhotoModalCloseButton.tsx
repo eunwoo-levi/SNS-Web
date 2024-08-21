@@ -12,7 +12,7 @@ export default function PhotoModalCloseButton() {
   return (
     <button
       onClick={onClick}
-      className="w-[36px] h-[36px] flex justify-center items-center hover:bg-gray-700 hover:bg-opacity-30 rounded-full m-4"
+      className="absolute top-[12px] left-[12px] w-[36px] h-[36px] flex justify-center items-center hover:bg-gray-700 hover:bg-opacity-30 rounded-full m-4"
     >
       <IoClose size={25} />
     </button>

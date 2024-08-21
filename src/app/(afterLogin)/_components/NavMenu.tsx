@@ -18,19 +18,19 @@ export default function NavMenu() {
   const me = { id: "levi" };
 
   return (
-    <>
+    <div className="pl-[10px] lg:pl-0">
       <li>
         <Link href={"/home"}>
           <div className="inline-flex items-center h-[50px] p-[12px] text-[20px] rounded-3xl  pr-[24px] hover:bg-[rgba(15,20,25,0.1)] dark:hover:bg-neutral-900 transition duration-200">
             {segment === "home" ? (
               <>
                 <IoHomeSharp size={30} />
-                <div className="ml-4 font-bold">Home</div>
+                <div className="hidden lg:block ml-4 font-bold ">Home</div>
               </>
             ) : (
               <>
                 <IoHomeOutline size={30} />
-                <div className="ml-4">Home</div>
+                <div className="hidden lg:block ml-4">Home</div>
               </>
             )}
           </div>
@@ -47,8 +47,8 @@ export default function NavMenu() {
             <div
               className={
                 segment && ["explore", "search"].includes(segment)
-                  ? "ml-2.5 font-bold"
-                  : "ml-4"
+                  ? "hidden lg:block ml-2.5 font-bold"
+                  : "hidden lg:block ml-4"
               }
             >
               Explore
@@ -62,12 +62,12 @@ export default function NavMenu() {
             {segment === "messages" ? (
               <>
                 <IoMailSharp size={30} />
-                <div className="ml-4 font-bold">Messages</div>
+                <div className="hidden lg:block ml-4 font-bold">Messages</div>
               </>
             ) : (
               <>
                 <IoMailOutline size={30} />
-                <div className="ml-4">Messages</div>
+                <div className="hidden lg:block ml-4">Messages</div>
               </>
             )}
           </div>
@@ -80,18 +80,18 @@ export default function NavMenu() {
               {segment === "profile" ? (
                 <>
                   <IoMdPerson size={30} />
-                  <div className="ml-4 font-bold">Profile</div>
+                  <div className="hidden lg:block ml-4 font-bold">Profile</div>
                 </>
               ) : (
                 <>
                   <IoPersonOutline size={30} />
-                  <div className="ml-4">Profile</div>
+                  <div className="hidden lg:block ml-4">Profile</div>
                 </>
               )}
             </div>
           </Link>
         </li>
       )}
-    </>
+    </div>
   );
 }

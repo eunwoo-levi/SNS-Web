@@ -13,7 +13,7 @@ export default function Tab() {
   };
 
   return (
-    <div className="fixed z-10 w-[598px] bg-[rgba(255,255,255,0.85)] dark:bg-transparent backdrop-blur-sm border-b-[1px] border-[rgb(47,51,54)]">
+    <div className="sticky top-0 z-10 w-full max-w-[590px] bg-[rgba(255,255,255,0.85)] dark:bg-transparent backdrop-blur-sm border-b-[1px] border-[rgb(47,51,54)] lg:max-w-[598px]">
       <div className="text-[20px] leading-[24px] font-bold py-[12px] px-[16px]">
         Home
       </div>
@@ -24,7 +24,7 @@ export default function Tab() {
         >
           For you
           <div
-            className="absolute bottom-0 bg-[rgba(29,155,240)] w-[56px] h-[4px] rounded-3xl"
+            className="absolute bottom-0 bg-[rgba(29,155,240)] w-[54px] h-[4px] rounded-3xl"
             hidden={tab === "fol"}
           />
         </div>

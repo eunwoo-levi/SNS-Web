@@ -12,15 +12,15 @@ const User = {
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-stretch w-[600px] border-x-[1px] border-neutral-300">
+    <main className="flex flex-col items-stretch w-full max-w-[600px] border-x-[1px] border-neutral-300">
       <div className="flex flex-row h-[53px] items-center ml-[10px]">
         <BackButton />
-        <div className="w-[510px] pl-[20px] flex items-center">
+        <div className="w-full max-w-[510px] pl-[20px] flex items-center">
           <h1 className="text-[22px] font-bold mr-2">{User.nickname}</h1>
           <BsFillShieldLockFill size={16} />
         </div>
       </div>
-      <div className="w-[600px] h-[400] flex flex-col justify-center items-center mt-[20px]">
+      <div className="w-full max-w-[600px] h-[400] flex flex-col justify-center items-center mt-[20px]">
         <Image
           width={135}
           height={135}
