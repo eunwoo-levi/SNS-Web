@@ -4,19 +4,19 @@ import Link from "next/link";
 
 export default function Main() {
   return (
-    <div className="flex flex-row w-full min-h-screen items-center">
+    <div className="flex flex-col lg:flex-row w-full min-h-screen items-center">
       <div className="flex-1 flex justify-center items-center">
         <Image
           width={350}
           height={350}
           src="/sLogo2.png"
           alt="logo"
-          className="rounded-3xl"
+          className="rounded-3xl w-[250px] h-[250px] lg:w-[350px] lg:h-[350px]"
         />
       </div>
 
       <div className="flex-1 flex flex-col items-start gap-2 mx-4 md:mx-2 lg:mx-0">
-        <div className="w-full flex justify-end pr-[60px] mb-[20px]">
+        <div className="w-full flex justify-center  mb-[20px] ">
           <DarkModeButton />
         </div>
 
