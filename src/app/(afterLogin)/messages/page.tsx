@@ -4,7 +4,7 @@ import Room from "./_components/Room";
 
 export default function Page() {
   return (
-    <main className="flex flex-col w-[400px] items-flex border-x-[1px] border-neutral-300">
+    <main className="flex flex-col w-full lg:w-[400px] items-flex border-x-[1px] border-neutral-300">
       <div className="flex justify-between w-full h-[53px] ">
         <h1 className="text-20px font-bold">Messagess</h1>
         <div className="flex flex-row gap-5">
