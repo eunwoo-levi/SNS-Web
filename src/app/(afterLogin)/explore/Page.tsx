@@ -3,8 +3,8 @@ import Trend from "../_components/Trend";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-stretch w-[600px] border-x-[1px] border-neutral-300">
-      <div className="w-[566px] pl-[16px] mb-[60px]">
+    <main className="flex flex-col items-stretch w-full lg:w-[600px] border-x-[1px] border-neutral-300">
+      <div className="w-full lg:w-[566px] mx-auto  mb-[15px]">
         <SearchForm />
       </div>
       <div className="text-[20px] font-bold mb-[12px] border-t-[0.5px] border-neutral-300">

@@ -11,12 +11,12 @@ interface Props {
 
 export default function SearchForm({ searchParams }: Props) {
   return (
-    <form className="fixed  bg-[rgba(239,243,244)] dark:bg-slate-800 flex items-center w-inherit h-[42px] mt-[2px] mb-[12px] rounded-3xl text-white">
+    <form className="sticky top-0 z-10 bg-[rgba(239,243,244)] dark:bg-slate-800 flex items-center w-full h-[42px] mt-[2px] mb-[12px] rounded-3xl">
       <IoSearch size={20} className="ml-4" color="gray" />
       <input
         type="search"
         placeholder="Search"
-        className="ml-2 pl-3 bg-inherit outline-none text-black dark:text-white "
+        className="ml-2 pl-3 bg-transparent outline-none text-black dark:text-white w-full"
       />
     </form>
   );
